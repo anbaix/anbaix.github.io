@@ -7,6 +7,7 @@
 
 # Site settings
 title: 山河社稷图 # ex. I m Chuan
+subtitle: 瞧瞧我都干了些什么！
 name: Ethan # ex. DONGChuan
 email: anbaix@hotmail.com
 #location: My location # ex. Nice, France
@@ -41,7 +42,14 @@ source:      .
 destination: ./_site
 
 quiet:    false
-defaults: []
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 
 kramdown:
   input: GFM
@@ -58,23 +66,25 @@ paginate_path: 'page:num'
 navs:
   -
     href: /
-    label: Home
+    label: 首页
 
   -
     href: /open-source
-    label: Open-Source
+    label: 我的码
 
   -
     href: /blog
-    label: Blog
-
-  -
-    href: /bookmark
-    label: Bookmark
+    label: 博文
 
   -
     href: /about
-    label: About
+    label: 我
+
+#front-page-subtitle-navs:
+#  -
+#    href: /github/github-pages/jekyll/2018/06/17/use-github-pages.html
+#    label: Jekyll&Github Pages搭建博客
+
 
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show
@@ -87,7 +97,7 @@ side_bar_repo_limit: 5 # Number of repos to show
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQL, Design Patterns]
+skill_software_keywords: [Java, MySQL]
 skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, MongoDB]
 #skill_mobile_app_keywords: [Android, Sketch UI Desgin]
