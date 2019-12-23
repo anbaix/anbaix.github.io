@@ -3,8 +3,9 @@ layout: post
 title:  "线性回归"
 date:   2019-12-23 13:25:35 +0200
 categories: Deep Learning 读书笔记
-no-post-nav: true
+tags: [Deep Learning]
 ---
+
 # 线性回归
 
 线性回归输出是一个连续值，因此适用于回归问题。回归问题在实际中很常见，如预测房屋价格、气温、销售额等连续值的问题。
