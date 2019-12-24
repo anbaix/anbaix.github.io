@@ -128,8 +128,7 @@ $$\ell(\boldsymbol{\theta})=\frac{1}{2n}(\boldsymbol{\hat{y}}-\boldsymbol{y})^\t
 $$\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} -   \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}   \nabla_{\boldsymbol{\theta}} \ell^{(i)}(\boldsymbol{\theta}),$$
 
 其中梯度是损失有关3个为标量的模型参数的偏导数组成的向量：
-$$\nabla_{\boldsymbol{\theta}} \ell^{(i)}(\boldsymbol{\theta})=\begin{bmatrix}\frac{ \partial \ell^{(i)}(w_1, w_2, b)  }{\partial w_1} \\\frac{ \partial \ell^{(i)}(w_1, w_2, b)  }{\partial w_2} \\\frac{ \partial \ell^{(i)}(w_1, w_2, b)  }{\partial b}\end{bmatrix}
-=\begin{bmatrix}x_1^{(i)} (x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}) \\x_2^{(i)} (x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}) \\x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\end{bmatrix}
-=\begin{bmatrix}x_1^{(i)} \\x_2^{(i)} \\1\end{bmatrix}(\hat{y}^{(i)} - y^{(i)}).$$
+$$\nabla_{\boldsymbol{\theta}} \ell^{(i)}(\boldsymbol{\theta})=\begin{bmatrix}\frac{ \partial \ell^{(i)}(w_1, w_2, b)  }{\partial w_1} \\ \frac{ \partial \ell^{(i)}(w_1, w_2, b)  }{\partial w_2} \\ \frac{ \partial \ell^{(i)}(w_1, w_2, b)  }{\partial b}\end{bmatrix}=\begin{bmatrix}x_1^{(i)} (x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}) \\ x_2^{(i)} (x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}) \\ x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\end{bmatrix}
+=\begin{bmatrix}x_1^{(i)} \\ x_2^{(i)} \\ 1\end{bmatrix}(\hat{y}^{(i)} - y^{(i)}).$$
 
 
